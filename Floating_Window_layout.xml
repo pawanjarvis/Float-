@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    android:background="@drawable/window_background">
+
+    <!-- विंडो हेडर -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#2196F3"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        
+        <TextView
+            android:id="@+id/window_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="विंडो टाइटल"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical" />
+        
+        <ImageButton
+            android:id="@+id/btn_minimize"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_minimize"
+            android:background="@null" />
+            
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close"
+            android:background="@null" />
+
+    </LinearLayout>
+
+    <!-- कंटेंट एरिया -->
+    <WebView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
